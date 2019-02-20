@@ -6,20 +6,33 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
     <title>Project</title>
+
 </head>
-<body>
+<body onload="autocirc()">
 <div class="container">
+    <h1 class="text-center">Roman Dulman 306033143</h1>
+    </br>
     <div class="row">
         <div class="col-sm-6">
-            One of three columns
+            <label>Radius:</label>
+            <input type="text" class="form-control" id="radiusinput">
+            </br>
+            <label>Volume:</label>
+            </br>
+            <span  id="volume"></span>
+            </br>
+            <button class="btn btn-info" onclick="validate();" >Calculate</button>
         </div>
         <div class="col-sm-6">
-            One of three columns
+            <canvas id="canvas" width="300" height="300"></canvas>
+            </br>
+            <button class="btn btn-danger btn-block" onclick="clearcan()">Clear</button>
         </div>
     </div>
 </div>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src=js/core.js</script>
-</body>
-</html>
+<script src=js/core.js></script>
+
+    </body>
+    </html>
